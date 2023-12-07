@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+    
+}
+
+h1{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 75px
+}
+
+
+body{
+    background-color: hsl(0, 0%, 86%);
+}
+ .invalid-feedback{
+    font-size: 10px;
+}
+
+
+
+.main-card{
+    background-color:  hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 15px;
+    border-bottom-right-radius: 25%;
+}
+.calculate-button{
+    background-color:  hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 15px;
+}
+.calculate-button:hover{
+    background-color:  hsl(0, 0%, 8%);
+}
+.container-fluid{
+    height: 97vh;
+}
+.date-values{
+    color: hsl(259, 100%, 65%);
+}
+.was-validated .form-control:valid {
+  background-image: none;
+  padding-right: 0px;
+}
+.was-validated .form-control:invalid {
+  background-image: none;
+  padding-right: 0px;
+}
+@media screen and (max-width: 576px) {
+    .calculate-button{
+        position: absolute;
+    }
+    input{
+        padding: 0px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
