@@ -51,6 +51,10 @@ body{
   background-image: none;
   padding-right: 0px;
 }
+.form-label{
+    font-weight: 400;
+    font-style: italic;
+}
 @media screen and (max-width: 576px) {
     .calculate-button{
         position: absolute;

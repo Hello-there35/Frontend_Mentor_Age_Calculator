@@ -79,6 +79,7 @@ $(".main-card").submit(function(event){
          $(".invalid-feedback").toArray().forEach((feedback) => {
              $(feedback).hide();
            });
+           changeInputLabelColorOnKey();
     }
     $(this).addClass("was-validated");
 })
@@ -118,7 +119,7 @@ countUpAnim = () =>{
   
 }
 
-changeInputLabelColorOnKey = (input, birthday) =>{
+changeInputLabelColorOnKey = (input) =>{
      $(input).keyup(function () {
        if ($(input).is(":invalid")) {
          $(input).parent().find(".form-label").css("color", "hsl(0, 100%, 67%)");
